@@ -8,36 +8,35 @@ Reset Password
 Login Password
 	http://127.0.0.1:8000/api/login?email=ratijugeli@gmail.com&password=123456789
 
-Update User
-	http://127.0.0.1:8000/api/user/?name=rati&email=ratijugeli@gmial.com&password=123456789
-
 Category List
 	http://127.0.0.1:8000/api/category/index
 
 Category Create
-	http://127.0.0.1:8000/api/category/create?name=testName
+	http://127.0.0.1:8000/api/category/create?name=text
 
 Category Modify
-	http://127.0.0.1:8000/api/category/modify?name=23123213&id=1&parent_id=2
+	http://127.0.0.1:8000/api/category/modify?name=text&id=1&parent_id=2
 Or
-	http://127.0.0.1:8000/api/category/modify?name=23123213&id=1
+	http://127.0.0.1:8000/api/category/modify?name=text&id=1
+Or
+    http://127.0.0.1:8000/api/category/modify?parent_id=&id=1
 
-Category Items List
+Cart Items List
 	http://127.0.0.1:8000/api/cart/index
 
-Category Create
+Cart Create
 	http://127.0.0.1:8000/api/cart/create?product_id=1
 
-Category Order (buy items ....)
+Cart Order (buy items ....)
 	http://127.0.0.1:8000/api/cart/order
 
-Category Remove (buy items ....)
+Cart itemRemove (buy items ....)
 	http://127.0.0.1:8000/api/cart/remove?product_id=1
 
-Category Add Quantity
+Cart item Add Quantity
 	http://127.0.0.1:8000/api/cart/add_quantity?product_id=1
 
-Category Subtract Quantity 
+Cart item Subtract Quantity 
 	http://127.0.0.1:8000/api/cart/subtract_quantity?product_id=1
 
 Ordered Item List My User_id
@@ -61,7 +60,7 @@ Rmove Product
 Add Category To Product
 	http://127.0.0.1:8000/api/product/add_category?product_id=1&category_id=3
 
-Remove Category To Product
+Remove Category From Product
 	http://127.0.0.1:8000/api/product/remove_category?product_id=1&category_id=3
 
 
